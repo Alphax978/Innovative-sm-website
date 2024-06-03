@@ -21,6 +21,7 @@ module.exports = {
         4: "#0d9ade",
         5: '#1997b2',
         6: "#327799",
+        7: "#1997b0",
         primary: {
           DEFAULT: '#3B82F6',
           50: '#f5f3ff',
