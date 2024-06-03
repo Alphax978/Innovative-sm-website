@@ -10,11 +10,11 @@ const Hero = () => {
   return (
     <div id="hero" class="bg-white relative pt-40 pb-[20px] lg:pt-44 dark:bg-gray-900 w-full h-full">
       <div class="relative xl:container m-auto px-6 md:px-12 lg:px-16">
-        <h1 class="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-1 text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl ">Innovative ISmartMandu<br class="lg:block hidden" /><span class="relative text-transparent bg-clip-text text-4"> Growing Nepal Digitally</span>.</h1>
+        <h1 class="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-blue-900 text-1 text-center sm:text-5xl md:text-4xl lg:w-auto lg:text-left xl:text-6xl ">Innovative ISmartMandu<br class="lg:block hidden" /><span class="relative  bg-clip-text text-7"> Growing Nepal Digitally. </span></h1>
         <div class="lg:flex">
           <div class="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
             <p class="sm:text-lg text-gray-700 dark:text-gray-300 lg:w-11/12">
-              At Innovative Smartmandu we deliver cutting-edge web solutions: custom development, e-commerce platforms, and data analytics. Empowering businesses with innovative technology.
+              At Innovative Smartmandu we deliver cutting-edge web solutions like custom development, Ecommerce platforms, and data analytics. Empowering businesses with innovative technology.
             </p>
             <span class="block font-semibold text-gray-500 dark:text-gray-400">We Are Trusted By.</span>
             <div class="grid grid-cols-3 space-x-4 md:space-x-6 md:flex md:justify-center lg:justify-start">

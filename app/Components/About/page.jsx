@@ -79,7 +79,7 @@ const About = () => {
                                 data-te-ripple-init data-te-ripple-color="dark">
                                 <Image src={krishnapauroti}
                                     class="w-full h-60 align-middle transition duration-300 ease-linear" alt='krishna pauroti' />
-                                <a href="#!">
+                                <a href="https://krishnapauroti.com/">
                                     <div
                                         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed ">
                                         <div class="flex h-full items-end justify-start">
@@ -101,7 +101,7 @@ const About = () => {
                                 data-te-ripple-init data-te-ripple-color="dark">
                                 <Image src={whitehat}
                                     class="w-full h-60 align-middle transition duration-300 ease-linear" alt='whitehat' />
-                                <a href="#!">
+                                <a href="https://whitehatlogistic.com/">
                                     <div
                                         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed ">
                                         <div class="flex h-full items-end justify-start">
@@ -119,18 +119,18 @@ const About = () => {
                             <div
                                 class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
                                 data-te-ripple-init data-te-ripple-color="dark">
-                                <Image src={realestate}
+                                <Image src={southwestern}
                                     class="w-full h-60 align-middle transition duration-300 ease-linear" alt='real estate' />
-                                <a href="#!">
+                                <a href="https://southwestern.edu.np/phd/">
                                     <div
                                         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed ">
                                         <div class="flex h-full items-end justify-start">
-                                            <h1 class="m-6 text-[15px] font-bold text-white">Mero Real Esate</h1>
+                                            <h1 class="m-6 text-[15px] font-bold text-white">SWS</h1>
                                         </div>
                                     </div>
                                     <div>
                                         <div
-                                            class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                                            class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
                                         </div>
                                     </div>
                                 </a>
@@ -139,18 +139,18 @@ const About = () => {
                             <div
                                 class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
                                 data-te-ripple-init data-te-ripple-color="dark">
-                                <Image src={southwestern}
+                                <Image src={realestate}
                                     class="w-full h-60 align-middle transition duration-300 ease-linear" alt='southwestern' />
-                                <a href="#!">
+                                <a href="https://www.merorealestate.com.au/">
                                     <div
                                         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed ">
                                         <div class="flex h-full items-end justify-start">
-                                            <h1 class="m-4 text-[15px] font-bold text-white">SWS</h1>
+                                            <h1 class="m-4 text-[15px] font-bold text-white">Mero Real Estate</h1>
                                         </div>
                                     </div>
                                     <div>
                                         <div
-                                            class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 ">
+                                            class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
                                         </div>
                                     </div>
                                 </a>
@@ -161,7 +161,7 @@ const About = () => {
                                 data-te-ripple-init data-te-ripple-color="dark">
                                 <Image src={sunshine}
                                     class="w-full h-60 align-middle transition duration-300 ease-linear" alt='southwestern' />
-                                <a href="#!">
+                                <a href="https://thesunshine.edu.np/">
                                     <div
                                         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed ">
                                         <div class="flex h-full items-end justify-start">
@@ -170,7 +170,7 @@ const About = () => {
                                     </div>
                                     <div>
                                         <div
-                                            class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 ">
+                                            class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
                                         </div>
                                     </div>
                                 </a>
@@ -181,7 +181,7 @@ const About = () => {
                                 data-te-ripple-init data-te-ripple-color="dark">
                                 <Image src={citizen}
                                     class="w-full h-60 align-middle transition duration-300 ease-linear" alt='southwestern' />
-                                <a href="#!">
+                                <a href="https://citizencollege.edu.np/">
                                     <div
                                         class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed ">
                                         <div class="flex h-full items-end justify-start">
@@ -190,7 +190,7 @@ const About = () => {
                                     </div>
                                     <div>
                                         <div
-                                            class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 ">
+                                            class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
                                         </div>
                                     </div>
                                 </a>

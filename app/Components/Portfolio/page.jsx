@@ -4,12 +4,10 @@
 import React from 'react'
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
 import Image from "next/image"
-import client1 from "../../Images/prism_cl.png"
-import client2 from "../../Images/thread_cl.png"
-// import client3 from "../../Images/sws.png"
+import client1 from "../../Images/client_ps.jpg"
+import client2 from "../../Images/client_ta.jpg"
+import client3 from "../../Images/client_ss.jpg"
 
 const Portfolio = () => {
 
@@ -33,7 +31,7 @@ const Portfolio = () => {
                 '“Working with iSmartmandu made me into good choice. Not only as Digital Partner. The service they provide is immculate and perfect.”',
             name: 'South Western State College',
             role: 'PHD',
-            avatar: ''
+            avatar: client3
         },
     ];
 
@@ -67,9 +65,9 @@ const Portfolio = () => {
                                 ></div>
                             </div>
 
-                            <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
+                            <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3 ">
                                 {testimonials.map((testimonial, index) => (
-                                    <div key={index} className="flex flex-col overflow-hidden shadow-xl">
+                                    <div key={index} className="flex flex-col overflow-hidden shadow-xl shadow-md p-4 mb-4 bg-white ">
                                         <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                                             <div className="flex-1">
                                                 <div className="flex items-center">

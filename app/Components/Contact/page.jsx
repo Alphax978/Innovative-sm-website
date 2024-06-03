@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from 'react'
-import Image from "next/image"
 
 const Contact = () => {
     const [name, setName] = useState("")
@@ -18,6 +17,7 @@ const Contact = () => {
         setEmail("");
         setMessage("");
     }
+
     return (
         <section id="contact" class="py-32">
             <div class="mx-16 max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -26,7 +26,7 @@ const Contact = () => {
                         <div class="">
                             <h4 class="text-6 text-[20px]  mb-4 lg:text-left text-center">Contact Us</h4>
                             <h2 class="text-gray-900 font-manrope text-4xl font-semibold leading-10 mb-9 lg:text-left text-center">Reach Out To Us</h2>
-                            <form action="">
+                            <form onSubmit={handleSubmit}>
                                 <input type="text"
                                     class="w-full h-14 shadow-sm text-gray-600 placeholder-text-400 text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none py-2 px-4 mb-8"
                                     placeholder="Name"
@@ -41,7 +41,7 @@ const Contact = () => {
                                 />
                                 <textarea name="" id="text"
                                     class="w-full h-48 shadow-sm resize-none text-gray-600 placeholder-text-400 text-lg font-normal leading-7 rounded-2xl border border-gray-200 focus:outline-none px-4 py-4 mb-8"
-                                    placeholder="Phone"
+                                    placeholder="message"
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
                                 >

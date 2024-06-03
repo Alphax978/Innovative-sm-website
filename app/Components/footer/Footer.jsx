@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react'
-import { Footer } from "flowbite-react";
 
 const IsmFooter = () => {
   return (
@@ -78,7 +77,7 @@ const IsmFooter = () => {
     </div>
   </div>
 
-  <div class="w-full bg-5 text-center pb-6 pt-6">
+  <div class="w-full bg-7  text-center pb-6 pt-6">
     Copyright © 2024 Innovative Smartmandu | Powered by Innovative Smartmandu | Privacy Policy
   </div>
 </footer>
