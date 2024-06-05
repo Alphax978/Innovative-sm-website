@@ -4,26 +4,44 @@
 import React, { useState } from 'react'
 import IsmHeader from '../../Components/Header/Header'
 import Footer from "../../Components/footer/Footer"
-import { Suspense } from 'react'
-import Link from 'next/link'
-import WebdevBasic from '@/app/Components/Webdevelopmentmodel/WebdevBasic'
-import WebdevPremium from '@/app/Components/Webdevelopmentmodel/WebdevPremium'
-import Webdevstandard from "@/app/Components/Webdevelopmentmodel/Webdevstandard"
+import WBModal from "../../Components/Webdevelopmentmodalquota/WBModal"
+
 
 const Webdevelopment = () => {
   const [openModalBasic, setOpenModalBasic] = useState(false)
   const [openModalStandard, setOpenModalStandard] = useState(false)
   const [openModalPremium, setOpenModalPremium] = useState(false)
 
-  const closeModalBasic = ({closeorder}) => {
+  // functions to close the modal, state passed
+  const closeModalBasic = ({ closeorder }) => {
     setOpenModalBasic(closeorder)
   }
-  const closeModalStandard = ({closeorder}) => {
+  const closeModalStandard = ({ closeorder }) => {
     setOpenModalStandard(closeorder)
   }
-  const closeModalPremium = ({closeorder}) => {
+  const closeModalPremium = ({ closeorder }) => {
     setOpenModalPremium(closeorder)
   }
+
+  const content = [
+    {
+      openModelweb: openModalBasic, // ---> state is assigned
+      closeModelweb: closeModalBasic, //---> function is assigned
+      packagetype: "Basic" //----. variable is assigned
+    },
+    {
+      openModelweb: openModalStandard,
+      closeModelweb: closeModalStandard,
+      packagetype: "Standard"
+    },
+    {
+      openModelweb: openModalPremium,
+      closeModelweb: closeModalPremium,
+      packagetype: "Premium"
+
+    }
+  ]
+
   return (
     <div>
       <IsmHeader />
@@ -37,14 +55,21 @@ const Webdevelopment = () => {
           </div>
           <div class="mx-auto max-w-7xl px-6 lg:px-8 mb-6">
           </div>
-          <WebdevBasic openModalBasic={openModalBasic} closeModalBasic={closeModalBasic}/>
 
-          <Webdevstandard openModalStandard={openModalStandard} closeModalStandard={closeModalStandard} />
+          {content.map((items, index) => {
+            return (
+              <div key={index}>
+                <WBModal
+                  openModalOrder={items.openModelweb}
+                  closeModalOrder={items.closeModelweb}
+                  packagetypes={items.packagetype}
+                />
+              </div>
+            );
+          })}
 
-          <WebdevPremium openModalPremium={openModalPremium} closeModalPremium={closeModalPremium} />
 
 
-          
           <div class="">
             <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
               <div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-3 lg:gap-8">
@@ -100,20 +125,20 @@ const Webdevelopment = () => {
                         <li class="flex items-start">
                           <div class="flex-shrink-0">
                             <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.5" aria-hidden="true" >
-                              <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000"  stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </div>
-                            <button onClick={() => {
-                              setOpenModalBasic(true)
-                            }}>
-                              <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p> 
-                            </button>
-                            
+                          <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
+
                         </li>
                       </ul>
-                      <div class="mt-8"><a
-                        class="inline-block w-full rounded-lg bg-teal-600 dark:bg-teal-400 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-teal-700 dark:hover:bg-teal-500 cursor-pointer"
-                        aria-describedby="tier-basic">Get your quote</a></div>
+                      <div class="mt-8">
+                        <button className="w-full" onClick={() => setOpenModalBasic(true)}>
+                          <p
+                            class="inline-block w-full rounded-lg bg-teal-600 dark:bg-teal-400 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-teal-700 dark:hover:bg-teal-500 cursor-pointer"
+                            aria-describedby="tier-basic">Get your quote</p>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -174,22 +199,22 @@ const Webdevelopment = () => {
                         <li class="flex items-start">
                           <div class="flex-shrink-0">
                             <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.5" aria-hidden="true" >
-                              <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000"  stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </div>
-                          <Link href="">
-                            <button onClick={() => {
-                                setOpenModalStandard(true)
-                              }}>
-                                <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p> 
-                              </button>
-                          </Link>
-                            
+                          <button>
+                            <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
+                          </button>
+
                         </li>
                       </ul>
-                      <div class="mt-8"><a
-                        class="inline-block w-full rounded-lg bg-teal-600 dark:bg-teal-400 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-teal-700 dark:hover:bg-teal-500 cursor-pointer"
-                        aria-describedby="tier-plus">Get your quote</a></div>
+                      <div class="mt-8">
+                        <button className='w-full' onClick={() => setOpenModalStandard(true)}>
+                          <p
+                            class="inline-block w-full rounded-lg bg-teal-600 dark:bg-teal-400 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-teal-700 dark:hover:bg-teal-500 cursor-pointer"
+                            aria-describedby="tier-plus">Get your quote</p>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -245,20 +270,19 @@ const Webdevelopment = () => {
                         <li class="flex items-start">
                           <div class="flex-shrink-0">
                             <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.5" aria-hidden="true" >
-                              <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000"  stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </div>
-                          <button onClick={() => {
-                              setOpenModalPremium(true)
-                            }}>
-                              <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p> 
-                            </button>
-                            
+                          <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
                         </li>
                       </ul>
-                      <div class="mt-8"><a
-                        class="inline-block w-full rounded-lg bg-teal-600 dark:bg-teal-400 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-teal-700 dark:hover:bg-teal-500 cursor-pointer"
-                        aria-describedby="tier-custom">Get a quote</a></div>
+                      <div class="mt-8">
+                        <button className='w-full' onClick={() => setOpenModalPremium(true)}>
+                          <p
+                            class="inline-block w-full rounded-lg bg-teal-600 dark:bg-teal-400 px-4 py-2.5 text-center text-sm font-semibold leading-5 text-white shadow-md hover:bg-teal-700 dark:hover:bg-teal-500 cursor-pointer"
+                            aria-describedby="tier-custom">Get a quote</p>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
