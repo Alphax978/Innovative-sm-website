@@ -1,9 +1,6 @@
 "use client";
 
-
 import React from 'react'
-import 'swiper/css';
-import 'swiper/css/navigation';
 import Image from "next/image"
 import client1 from "../../Images/client_ps.jpg"
 import client2 from "../../Images/client_ta.jpg"
