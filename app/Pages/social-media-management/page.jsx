@@ -128,7 +128,9 @@ const SSM = () => {
                               <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000"  stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </div>
+                          <Link href="ssm-faq/Basic">
                             <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
+                          </Link>
                             
                         </li>
                       </ul>
@@ -202,7 +204,9 @@ const SSM = () => {
                               <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000"  stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </div>
+                          <Link href="ssm-faq/Standard">
                             <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
+                          </Link>
                             
                         </li>
                       </ul>
@@ -271,7 +275,9 @@ const SSM = () => {
                               <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000"  stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </div>
+                          <Link href="ssm-faq/Premium">
                             <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
+                          </Link>
                             
                         </li>
                       </ul>

@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import IsmHeader from '../../Components/Header/Header'
 import Footer from "../../Components/footer/Footer"
 import WBModal from "../../Components/Webdevelopmentmodalquota/WBModal"
+import Link from 'next/link'
 
 
 const Webdevelopment = () => {
@@ -128,7 +129,9 @@ const Webdevelopment = () => {
                               <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </div>
-                          <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
+                          <Link href="Webdevelopment-Faq/Basic">
+                            <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
+                          </Link>
 
                         </li>
                       </ul>
@@ -202,9 +205,9 @@ const Webdevelopment = () => {
                               <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </div>
-                          <button>
+                          <Link href="Webdevelopment-Faq/Standard">
                             <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
-                          </button>
+                          </Link>
 
                         </li>
                       </ul>
@@ -273,7 +276,10 @@ const Webdevelopment = () => {
                               <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                           </div>
-                          <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
+                          <Link href="Webdevelopment-Faq/Premium">
+                            <p class="ml-3 text[17px] leading-6 text-6 dark:text-gray-300 ">Know More</p>
+                          </Link>
+                          
                         </li>
                       </ul>
                       <div class="mt-8">
